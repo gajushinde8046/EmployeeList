@@ -1,0 +1,14 @@
+<div class="tps"  >
+  <h2 > Update Employee </h2> 
+  <form  id="upData" name="upData" #updateD="ngForm" (ngSubmit)="onUpdate(updateD.value)">
+    <ul >
+      <div  name="id"> Id: </div>
+      <input name="id" type="number" [(ngModel)]="editdata.id"   required #id="ngModel"/><br>
+      <div> Name: </div>  
+      <input name="name" type="text" ngModel [(ngModel)]="editdata.name"  required #name="ngModel"/><br>
+      <div> Address:</div>
+      <input name="address" type="text"  ngModel  [(ngModel)]="editdata.address" required #address="ngModel"/><br><br>
+      <input class="update" type="submit" value="Update"  /><br>
+    </ul>
+  </form>
+</div>

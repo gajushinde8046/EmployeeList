@@ -1,0 +1,20 @@
+
+input.add {
+    background-color:rgb(207, 202, 202);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: Arial;
+  }
+  
+  input.add:hover {
+    background-color: rgb(131, 4, 216);
+  }
+  .tp{
+    position: absolute;
+    right: 50%;
+    top: 30%;
+  }
+ 

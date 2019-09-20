@@ -1,0 +1,25 @@
+button {
+    background-color:grey;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* cursor: hand; */
+    font-family: Arial;
+  }
+  
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button.del {
+    background-color:crimson;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: Arial;
+  }
+  button.del:hover {
+    background-color: #cfd8dc;
+  }

@@ -1,0 +1,69 @@
+
+<div *ngIf="!valuesa">
+       <h2>  List of Employees </h2>
+  <div class="row">
+    <div class="col-3"*ngFor="let data of datas">
+        <div> Id:  {{data.id }} </div> <br>
+        <div> Name: {{data.name | uppercase}}</div><br> 
+        <div>Address: {{data.address}} </div> <br>
+        <button class="del"  (click)="onDelete(data)">Delete</button> &nbsp;
+        <button type="submit" (click)="OnEdit(data)">Edit</button><br><br>
+        
+        <br>
+    </div>
+  </div>
+ 
+  <!-- <ul *ngFor="let data of datas"> 
+    <li> 
+      <div> Id:  {{data.id }} </div> 
+      <div> Name: {{data.name | uppercase}}</div> 
+      <div>Address: {{data.address}} </div> 
+      <button class="del"  (click)="onDelete(data)">Delete</button> &nbsp;
+      <button type="submit" (click)="OnEdit(data)">Edit</button>
+    </li>
+  </ul> -->
+</div>
+<app-update *ngIf="valuesa" [editdata]="editdata"  (upevent)="!valuesa=$event"></app-update>
+ <!-- <app-new *ngIf="valuesa" [editdata]="editdata"  (newevent)="!valuesa=$event"></app-new> -->
+
+
+<!-- 
+<div class="tps" *ngIf="!valuesa" >
+ <h1 > Update Employee</h1> 
+  <form   #updateData="ngForm" (ngSubmit)="onUpdate(updateData)">
+    <ul *ngFor="let data of datas">
+      <li>
+    <div > Id:</div> <br>  
+
+    <input name="id" type="number" ngModel  required #id="ngModel"/><br>
+ 
+  <div > Name: </div> <br>  
+
+   <input name="name" type="text" ngModel  required #name="ngModel"/><br>
+   
+<div  > Address:</div> <br>
+
+ <input name="address" type="text" ngModel required #address="ngModel"/><br>
+     <input  type="submit" value="Update"/><br><br>
+    </li>
+  </ul>
+  </form>
+</div> -->
+
+
+
+
+
+<!-- 
+  <table>
+<th>Id</th>
+<th>Name</th>
+<th>Address</th>
+<th></th>
+  <tr *ngFor="let data of datas"></tr>
+  <td>{{data.id }}</td>
+  <td>{{data.name }}</td>
+  <td>{{data.address }}</td>
+  <td (click)="onDelete(data.id)">DELETE</td>
+ 
+  </table> -->

@@ -1,0 +1,12 @@
+<div class="tp" >
+  <h2 > Add New Employee</h2> 
+  <form  id="newData" name="newData" #addData="ngForm"   (ngSubmit)="onSubmit(addData.value)" >
+    <div> Id :  </div>    
+    <input name="id" type="number" ngModel required #id="ngModel"/><br><br>
+    <div > Name: </div>   
+    <input name="name" type="text" ngModel  required #name="ngModel"/><br><br>
+    <div> Address:</div> 
+    <input name="address" type="text"  ngModel required #address="ngModel"/><br><br>
+    <input class="add" type="submit"  value="Add" >
+  </form>
+</div>
